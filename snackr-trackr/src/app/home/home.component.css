@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+}
+.table-div{
+    border-style: solid;
+    width: 50vw;
+    min-width: 500px;
+
+    /* top and bottom are zero, right and left are auto */
+    margin-right:  auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
