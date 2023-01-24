@@ -34,29 +34,25 @@ Making an Angular based front end.
 Pages:
 ------
 
-<!-- 1 -->
-Show today's snacks
-    Table view
-        Column names: name, calories, carbs, sugar, today's count
-Add snack
-    Form
-        Search bar to search for items available in the DB
+    Show today's snacks
+        Table view
+            Column names: name, calories, carbs, sugar, today's count
+    Add snack
+        Form
+            Search bar to search for items available in the DB
 
-Snack history
-    Table view
-        Column names: name, total count for all time or selected date range, total calories, total carbs, total sugar
+    Snack history
+        Table view
+            Column names: name, total count for all time or selected date range, total calories, total carbs, total sugar
 
 
-<!-- 2 -->
-Create snack - admin
-    Form
-        Fields
-            name, calories, carbs, sugar
-<!-- 3 -->
-Login
-    Register
+    Create snack - admin
+        Form
+            Fields
+                name, calories, carbs, sugar
     Login
+        Register
+        Login
 
-<!-- 4 -->
-User Profile
-    Edit name, user name, password, dark mode
+    User Profile
+        Edit name, user name, password, dark mode
