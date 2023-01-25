@@ -1,3 +1,4 @@
+
 table {
     width: 100%;
 }
@@ -6,8 +7,27 @@ table {
     width: 50vw;
     min-width: 500px;
 
-    /* top and bottom are zero, right and left are auto */
     margin-right:  auto;
     margin-left: auto;
     margin-top: 20px;
+    color: primary;
+    
+}
+
+.mat-column-name {
+    border-right: 2px solid currentColor;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mat-column-size{
+    text-align: center;
+}
+
+.mat-column-calories{
+    text-align: center;
+}
+
+.mat-column-sugar{
+    text-align: center;
 }
