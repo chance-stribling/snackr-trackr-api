@@ -11,6 +11,12 @@ export interface Sample {
 
 const SAMPLE_DATA: Sample[] = [
   {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
+  {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
+  {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
+  {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
+  {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
+  {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
+  {id: 0, name: 'Coke', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 38},
   {id: 1, name: 'Sprite', size: 12, sizeUnit:'fl oz', calories: 140, sugar: 39}
 ];
 
