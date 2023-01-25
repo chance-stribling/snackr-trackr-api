@@ -2,16 +2,19 @@
 table {
     width: 100%;
 }
-.table-div{
-    border-style: solid;
-    width: 50vw;
+.title-div{
+    
     min-width: 500px;
-
+    width: 50vw;
     margin-right:  auto;
     margin-left: auto;
-    margin-top: 20px;
-    color: primary;
-    
+}
+.table-div{
+    margin-top: 100px;
+    min-width: 500px;
+    width: 50vw;
+    margin-right:  auto;
+    margin-left: auto;
 }
 
 .mat-column-name {
@@ -30,4 +33,7 @@ table {
 
 .mat-column-sugar{
     text-align: center;
+}
+.mat-header-cell{
+    background-color: aqua;
 }

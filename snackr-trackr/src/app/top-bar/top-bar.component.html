@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="">
+          <mat-icon>fastfood</mat-icon>
+          <span>Today's Trackr</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>list_alt</mat-icon>
+          <span>Snack Summary</span>
+        </button>
+        <button mat-menu-item routerLink="create">
+           <mat-icon>settings</mat-icon>
+           <span>Admin - Set Up Snack</span>
+        </button>
+        
+    </mat-menu>
+    
+    <span class="title">Snackr Trackr</span>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
