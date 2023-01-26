@@ -3,11 +3,11 @@
     width: 50vw;
     margin-right:  auto;
     margin-left: auto;
-    text-align: center;
 }
 .form-group{
     min-width: 500px;
     width: 50%;
+    margin-top: 60px;
     margin-right:  auto;
     margin-left: auto;
     display: flex;
