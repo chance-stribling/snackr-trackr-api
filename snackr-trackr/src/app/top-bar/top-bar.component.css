@@ -1,7 +1,11 @@
 .spacer {
-    flex: 1 1 auto;
-  }
-  .title{
-    font-size: 32px;
-    font-weight: bold;
-  }
+  flex: 1 1 auto;
+}
+.title{
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.mat-toolbar{
+  color: white;
+}

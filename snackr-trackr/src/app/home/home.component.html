@@ -1,6 +1,12 @@
 <div class="title-div">
     <h1>Today's Snacks</h1>
 </div>
+<div class="adder">
+    <mat-form-field class="whole" appearance="fill">
+        <mat-label>Let's have a...</mat-label>
+        <input matInput>
+    </mat-form-field>
+</div>
 <div class="table-div mat-elevation-z6">
     <table mat-table [dataSource]="dataSource" >
         <ng-container matColumnDef="name">
