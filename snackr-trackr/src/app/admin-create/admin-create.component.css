@@ -5,3 +5,22 @@
     margin-left: auto;
     text-align: center;
 }
+.form-group{
+    min-width: 500px;
+    width: 50%;
+    margin-right:  auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.whole{
+    width: 100%;
+}
+.half{
+    width: 45%
+}
+
+
+  
