@@ -11,10 +11,6 @@
           <mat-icon>list_alt</mat-icon>
           <span>Snack Summary</span>
         </button>
-        <button mat-menu-item routerLink="user-details">
-          <mat-icon>account_box</mat-icon>
-          <span>User Details - Temporary</span>
-        </button>
         <button mat-menu-item routerLink="create">
            <mat-icon>settings</mat-icon>
            <span>Admin - Set Up Snack</span>
@@ -24,10 +20,7 @@
     
     <span class="title" routerLink="">Snackr Trackr</span>
     <span class="spacer"></span>
-    <button mat-icon-button>
-      <mat-icon>favorite</mat-icon>
-    </button>
-    <button mat-icon-button>
-      <mat-icon>share</mat-icon>
+    <button mat-mini-fab color="accent" routerLink="user-details">
+      <mat-icon>person</mat-icon>
     </button>
 </mat-toolbar>

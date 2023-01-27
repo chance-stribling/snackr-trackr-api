@@ -42,7 +42,23 @@ table {
     margin-top: 60px;
     margin-right:  auto;
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
 }
 .whole{
     width: 100%;
+}
+.lha{
+    width: 75%;
+}
+.lha-submit{
+    width: 20%;
+    height: 56px;
+    font-size: larger;
+    color: white !important;
+}
+.spacer {
+    flex: 1 1 auto;
 }

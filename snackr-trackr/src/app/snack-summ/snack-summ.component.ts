@@ -9,39 +9,19 @@ export interface UserData {
   progress: string;
   fruit: string;
 }
+export interface Snack{
+  id: number;
+  name: string;
+  size: number;
+  units: string;
+  date: string;
+}
+const SNACKS: Snack[]=[
+  {id: 1, name:"Coke", size: 12, units: "fl oz", date: "01-01-2023"},
+  {id: 2, name:"Coke", size: 12, units: "fl oz", date: "05-06-2022"},
+  {id: 3, name:"Caramel Frap", size: 13.7, units: "fl oz", date: "12-23-1997"}
+]
 
-/** Constants used to fill up our data base. */
-const FRUITS: string[] = [
-  'blueberry',
-  'lychee',
-  'kiwi',
-  'mango',
-  'peach',
-  'lime',
-  'pomegranate',
-  'pineapple',
-];
-const NAMES: string[] = [
-  'Maia',
-  'Asher',
-  'Olivia',
-  'Atticus',
-  'Amelia',
-  'Jack',
-  'Charlotte',
-  'Theodore',
-  'Isla',
-  'Oliver',
-  'Isabella',
-  'Jasper',
-  'Cora',
-  'Levi',
-  'Violet',
-  'Arthur',
-  'Mia',
-  'Thomas',
-  'Elizabeth',
-];
 
 @Component({
   selector: 'app-snack-summ',
@@ -49,8 +29,8 @@ const NAMES: string[] = [
   styleUrls: ['./snack-summ.component.css']
 })
 export class SnackSummComponent implements AfterViewInit {
-  displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
-  dataSource: MatTableDataSource<UserData>;
+  displayedColumns: string[] = ['name', 'size', 'date'];
+  dataSource: MatTableDataSource<Snack>;
 
   // needs the any to function
   @ViewChild(MatPaginator) paginator:any = MatPaginator;
@@ -59,10 +39,9 @@ export class SnackSummComponent implements AfterViewInit {
   constructor() {
     // Create 100 users
     // references the create user function, only needed for sample data
-    const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
     // Assign the data to the data source for the table to render
-    this.dataSource = new MatTableDataSource(users);
+    this.dataSource = new MatTableDataSource(SNACKS);
   }
   
   ngAfterViewInit() {
@@ -78,19 +57,4 @@ export class SnackSummComponent implements AfterViewInit {
       this.dataSource.paginator.firstPage();
     }
   }
-}
-
-function createNewUser(id: number): UserData {
-  const name =
-    NAMES[Math.round(Math.random() * (NAMES.length - 1))] +
-    ' ' +
-    NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) +
-    '.';
-
-  return {
-    id: id.toString(),
-    name: name,
-    progress: Math.round(Math.random() * 100).toString(),
-    fruit: FRUITS[Math.round(Math.random() * (FRUITS.length - 1))],
-  };
 }
