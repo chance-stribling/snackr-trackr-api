@@ -17,10 +17,20 @@
         </button>
         
     </mat-menu>
-    
-    <span class="title" routerLink="">Snackr Trackr</span>
-    <span class="spacer"></span>
-    <button mat-mini-fab color="accent" routerLink="user-details">
-      <mat-icon>person</mat-icon>
-    </button>
+      
+      <span class="title" routerLink="">Snackr Trackr</span>
+      <span class="spacer"></span>
+      <button mat-mini-fab color="accent" [matMenuTriggerFor]="menu2">
+        <mat-icon>person</mat-icon>
+      </button>
+      <mat-menu #menu2="matMenu">
+        <button mat-menu-item routerLink="user-details">
+          <span>User Details</span>
+          <mat-icon>list_alt</mat-icon>
+        </button>
+        <button mat-menu-item routerLink="user-details">
+          <span>Logout</span>
+          <mat-icon>fastfood</mat-icon>
+        </button>
+    </mat-menu>
 </mat-toolbar>

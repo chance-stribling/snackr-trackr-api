@@ -37,9 +37,6 @@ export class SnackSummComponent implements AfterViewInit {
   @ViewChild(MatSort) sort:any = MatSort;
   
   constructor() {
-    // Create 100 users
-    // references the create user function, only needed for sample data
-
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(SNACKS);
   }
